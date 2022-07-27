@@ -67,11 +67,9 @@ bool? zero(double number, {bool exam = false}) {
 //8
 // определить есть  ли в массиве повторные значения
 bool massive() {
-  List<int> list1 = [1, 2, 3, 4, 5, 6, 7, 5];
+  List<int> list1 = [1, 2, 3, 4, 5, 5, 6, 7];
   int previus = 0;
   bool is_contains = false;
-// сортировка по возрастанию
-  list1.sort((a, b) => a.compareTo(b));
 
   for (var i in list1) {
     if (i == previus) {
